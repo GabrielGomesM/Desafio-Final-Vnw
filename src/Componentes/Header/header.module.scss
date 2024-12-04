@@ -1,0 +1,106 @@
+header {
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 27, 47, 1) 0%,
+    rgba(0, 86, 149, 1) 88%
+  );
+}
+.BoxLogo {
+  width: 23vw;
+  display: flex;
+  color: white;
+  align-items: center;
+  height: 14vh;
+  justify-content: space-evenly;
+}
+
+.BoxMenu {
+  width: 35vw;
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    a {
+      color: white;
+    }
+  }
+}
+
+.BoxInput {
+  border: solid 2px white;
+  width: 17vw;
+  height: 6vh;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 15px;
+  input {
+    width: 12vw;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 15px;
+    &::placeholder {
+      color: white;
+    }
+  }
+}
+
+@media (max-width: 1151px) {
+  .BoxLogo {
+    width: 25vw;
+    h1 {
+      font-size: 1.8vw;
+    }
+    img {
+      width: 5vw;
+    }
+  }
+  .BoxMenu {
+    ul {
+      font-size: 1.7vw;
+    }
+  }
+  .BoxInput {
+    width: 18vw;
+    input {
+      &::placeholder {
+        font-size: 1.2vw;
+      }
+    }
+  }
+}
+@media (max-width: 760px) {
+  header {
+    height: 25vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .BoxInput {
+    display: none;
+  }
+  .BoxLogo {
+    width: 80%;
+
+    h1 {
+      font-size: 25px;
+    }
+    img {
+      width: 60px;
+    }
+  }
+  .BoxMenu {
+    width: 100%;
+    ul {
+      justify-content: space-evenly;
+      font-size: 22px;
+    }
+  }
+}
